@@ -1,0 +1,258 @@
+/* Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    /* background-image: url('../Images/Back\ Ground.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* background: linear-gradient(277.23deg, #FFCDCC 2.3%, #FFFFFF 96.7%); */
+}
+
+.logo {
+    margin-left: 100px;
+}
+
+.logo img{
+    width: 130px;
+    height: 35px;
+}
+
+.navbar{
+    margin: 10px 250px;
+}
+
+.navbar a{
+    color:#211B3D;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    transition-duration: 0.1s;
+    padding-bottom: 0;
+}
+
+.navbar a:hover{
+    color: #FB644B;
+    border-bottom: 2px solid #FB644B;
+}
+
+.navbar a#current{
+    color: #FB644B;
+    border-bottom: 2px solid #FB644B;
+}
+
+.signin{
+    width: 625px;
+    border-radius: 40px;
+    padding: 15px;
+    margin: 50px auto;
+    background: linear-gradient(121.27deg, #FFCBC9 -22.1%, #FFFFFF 135.65%);
+    animation: fade 1s;
+}
+
+.signtitle {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 35px;
+}
+
+.signtitle h3{
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 35px;
+    color: #211B3D;
+    margin:20px auto;
+}
+
+.signtitle p{
+    font-weight: 500;
+    color:#9B9B9B;
+}
+
+.signin form{
+    margin-left: 50px;
+}
+
+.signin form label{
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.signin form input{
+    width: 500px;
+    height: 50px;
+    border-radius: 80px;
+    border: none;
+    display: block;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.signin form input::placeholder{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    color: #9B9B9B;
+    opacity: 0.5;
+}
+
+.signin #show {
+    width: 15px;
+    display: inline-block;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.signin #labelshow{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.buttons{
+    margin-left: 400px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#button{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    border-radius: 90px;
+    border: none;
+    background-color: #FB644B;
+    color:#FFFFFF;
+    margin-right: 5px;
+    padding: 0;
+}
+
+#button:disabled {
+    background-color:#FF9988;
+}
+
+#button:hover:not([disabled]){
+    color: #211B3D;
+    background-color: #FFCBC9;
+}
+
+#wrong {
+    color: red;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 200px;
+    vertical-align: middle;
+    margin-top: 2px;
+}
+
+.signin form input[type="date"]{
+    width: 250px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.signin form input[type="date"]::-webkit-datetime-edit{
+    color: #9B9B9B;
+}
+
+.signin form input[type="date"]::-webkit-calendar-picker-indicator{
+    background-image: url("/Images/Calendar.png");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+
+.sideform{
+    display: flex;
+}
+
+.signin form #certificate {
+    display: none;
+    width: 250px;
+}
+
+.signin form #license{
+    display: none;
+    width: 500px;
+}
+
+.signin form input[type="file"]::-webkit-file-upload-button{
+    display: none;
+}
+
+.signin form span.practice{
+    text-align: center;
+    width: 500px;
+}
+
+.practice label{
+    width: 500px;
+}
+
+#certiflabel{
+    width: 225px;
+    height: 50px;
+    margin-left: 10px;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    text-align: center;
+    border: 1px dashed #000000;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+#licenselabel{
+    width: 500px;
+    height: 150px;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    border: 1px dashed #000000;
+    border-radius: 10px;
+    padding-top: 55px;
+    font-size: 24px;
+}
+
+.regist{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    margin-left: 325px;
+}
+
+.regist span{
+    color: #FB644B;
+}
+
+.regist:hover{
+    color: #FB644B;
+}
+
+.regist span:hover{
+    color: #000;
+}
+
+@keyframes fade{
+    from {
+        opacity: 0.5;
+        transform: translateY(60px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

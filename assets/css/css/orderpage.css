@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    background-image: url('../Images/Vector\ 163.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img{
+    width: 130px;
+    height: 35px;
+}
+
+.navbar, .logo, .signin {
+    margin: 10px auto;
+}
+
+.navbar a{
+    color:#211B3D;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 0;
+}
+
+.navbar a:hover{
+    color: #FB644B;
+    border-bottom: 2px solid #FB644B;   
+}
+
+.navbar a#current{
+    color: #FB644B;
+    border-bottom: 2px solid #FB644B;
+}
+
+.signin a button{
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    background-color: #FB644B;
+    color: #FFFFFF;
+    border: none;
+    transition-duration: 0.5s;
+}
+
+.signin a button:hover, .check button:hover{
+    background-color: #FFCBC9;
+    color: #211B3D;
+}
+
+.signin a {
+    color: #211B3D;
+    text-decoration: none;
+    font-weight: 500;
+    transition-duration: 0.5s;
+}
+
+.signin button a:hover{
+    color: #FFFFFF;
+}
+
+.title, .search {
+    margin-left: 100px;
+}
+
+.title h2{
+    color:#211B3D;
+    font-weight: 700;
+}
+
+.title h6{
+    color: #211B3D;
+    font-weight: 500;
+}
+
+.search input{
+    width: 210px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid #FB644B;
+    opacity: 0.5;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.search input::placeholder{
+    font-weight: 500;
+    color: rgba(33, 27, 61, 0.5);
+}
+
+.ordercontainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.orderside{
+    background: linear-gradient(131.12deg, #FFCFCD 33.27%, #FFFFFF 108%);
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile p:not(.name){
+    margin-bottom: 5px;
+}
+
+.order-card {
+    background: linear-gradient(155.2deg, #FFCFCD 32.22%, #FFFFFF 104.67%);
+    border-radius: 20px;
+    width: 850px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-body{
+    width: 620px;
+}
+
+.medicinename {
+    color: #211B3D;
+    font-weight: 600;
+}
+
+.medicinetitle{
+    color: #9B9B9B;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.price{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.medicineprice{
+    color: #211B3D;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+
+
+.amount{
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    padding: 0;
+    background-color: #FB644B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 7px;
+}
+
+#count{
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+    border-radius: 7px;
+    border: none;
+    padding-left: 12px;
+}
+
+#delete{
+    cursor: pointer;
+}
+
+
+.checkout{
+    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+}
+
+.checkout h3{
+    color: #FB644B;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.checkout h3 span{
+    color: #211B3D;
+}
+
+.check{
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.check button{
+    background-color: #FB644B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 145px;
+    transition-duration: 0.5s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.delete{
+    border: none;
+    background-color: transparent;
+}

@@ -1,0 +1,212 @@
+/* Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Poppins", sans-serif;
+	padding: 0px;
+	/* background-image: url('../Images/Maskgroup.png'); */
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* Styling header */
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.logo img {
+	width: 130px;
+	height: 35px;
+}
+
+.navbar,
+.logo,
+.signin {
+	margin: 10px auto;
+}
+
+.navbar a {
+	color: #211b3d;
+	text-decoration: none;
+	margin-right: 30px;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	transition-duration: 0.1s;
+	padding-bottom: 0;
+}
+
+.navbar a:hover {
+	color: #fb644b;
+	border-bottom: 2px solid #fb644b;
+}
+
+.navbar a#current {
+	color: #fb644b;
+	border-bottom: 2px solid #fb644b;
+}
+
+.signin a button {
+	width: 120px;
+	height: 40px;
+	border-radius: 50px;
+	font-size: 13px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	background-color: #ffffff;
+	border: none;
+	transition-duration: 0.5s;
+}
+
+.signin a button:hover {
+	background-color: #fb644b;
+	color: #ffffff;
+}
+
+.signin a {
+	color: #211b3d;
+	text-decoration: none;
+	font-weight: 500;
+	transition-duration: 0.5s;
+}
+
+.signin button a:hover {
+	color: #ffffff;
+}
+
+/* Styling main */
+
+.banner {
+	display: flex;
+}
+
+.more {
+	font-family: "Poppins", sans-serif;
+}
+
+.headTitle {
+	margin-top: 100px;
+	margin-left: 100px;
+	font-family: "Poppins", sans-serif;
+	width: 500px;
+	animation: slide 1.5s;
+}
+
+.headTitle h6 {
+	font-weight: 600;
+	line-height: 24px;
+	color: #fb644b;
+}
+
+.headTitle h1 {
+	font-weight: 700;
+	color: #211b3d;
+	margin: 25px auto;
+}
+
+.headTitle p {
+	font-weight: 400;
+	line-height: 24px;
+	color: #9b9b9b;
+	width: 390px;
+}
+
+.headTitle button {
+	background: #fb644b;
+	border-radius: 50px;
+	width: 150px;
+	height: 45px;
+	color: #ffffff;
+	border: none;
+	margin-top: 10px;
+}
+
+.steps {
+	margin-left: 90px;
+	animation: slide 1.5s;
+}
+
+.card {
+	transition-duration: 0.5s;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.steptitle {
+	margin-left: 10px;
+}
+
+.steptitle h6 {
+	font-weight: 600;
+	color: #fb644b;
+	margin-bottom: 10px;
+}
+
+.steptitle h3 {
+	font-weight: 600;
+	color: #211b3d;
+}
+
+.doctorstitle {
+	text-align: center;
+}
+
+.doctorstitle h6 {
+	font-weight: 600;
+	color: #fb644b;
+}
+
+.doctorstitle h3 {
+	font-weight: 600;
+	color: #211b3d;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+}
+
+.footimg img {
+	width: 400px;
+	animation: float 2s linear infinite;
+}
+
+.foot {
+	width: 500px;
+	margin-top: 80px;
+	margin-left: 100px;
+}
+
+/* Animation */
+
+/* Animation slide saat diload */
+@keyframes slide {
+	from {
+		opacity: 0.2;
+		transform: translateY(200px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+/* animation pada gambar footer */
+@keyframes float {
+	0%,
+	100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+}
